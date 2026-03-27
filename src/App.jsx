@@ -4,7 +4,7 @@ function App() {
   return (
     <div style={{ fontFamily: "Arial, sans-serif", maxWidth: "900px", margin: "0 auto", padding: "40px" }}>
       <header style={{ marginBottom: "40px" }}>
-        <h1>Lee Shaw Kiat</h1>
+        <h1>Lee Shaw Kiat loves rina</h1>
         <p><p>Engineering Systems and Design Undergraduate | Finance & Data Analytics</p></p>
         <p>Email: your@email.com | LinkedIn: your-link | GitHub: your-link</p>
       </header>
