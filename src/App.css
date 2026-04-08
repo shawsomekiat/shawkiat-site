@@ -353,12 +353,17 @@
 
 .card-grid,
 .skills-grid,
-.contact-grid {
+.contact-grid,
+.about-highlights {
   display: grid;
   gap: 1.5rem;
 }
 
 .card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.about-highlights {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
@@ -395,6 +400,13 @@
   line-height: 1.3;
 }
 
+.card-meta {
+  margin: 0.55rem 0 0;
+  color: rgba(255, 212, 219, 0.82);
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
 .project-card h3 {
   font-size: 1.4rem;
 }
@@ -429,6 +441,10 @@
 
 .skill-card h3 {
   margin-bottom: 1rem;
+}
+
+.about-card {
+  padding: 1.6rem;
 }
 
 .contact-panel {

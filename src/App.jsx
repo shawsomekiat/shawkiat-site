@@ -13,89 +13,68 @@ const navigation = [
 
 const experienceItems = [
   {
-    company: "LionsBot International - Griffinlabs",
-    role: "Artificial Intelligence Engineer Intern",
+    company: "LionsBot International, Griffin Labs",
+    role: "Artificial Intelligence Engineering Intern - Head of Data Collection and Teleoperation",
+    period: "Jan 2026 - Present",
     bullets: [
-      "Supported robotics development work across Griffinlabs materials covering AMR wiring, EV3 subsystem documentation, and technical coordination for robot hardware setups.",
-      "Worked with system-level references for lift and e-box components, building familiarity with sensors, wiring layouts, and integration details in a production-oriented robotics environment.",
-      "Contributed in a hands-on setting where technical execution had to stay aligned with clear documentation, organized implementation, and practical engineering needs.",
+      "Built and deployed an end-to-end robotics inference pipeline, integrating dual-arm robotic systems with cloud-based Vision-Language-Action models for real-time decision-making.",
+      "Evaluated model performance across multiple training checkpoints, identifying grasp instability, over-commitment, and policy collapse, and improved model performance by 50% within the first week.",
+      "Developed a Python-based diagnostic tool to identify dataset episodes responsible for training loss and support faster model iteration.",
     ],
   },
   {
     company: "CortexAI",
-    role: "Robot Operator and Coordinator",
+    role: "Artificial Intelligence Engineering Intern - Lead Robot Operator and Coordinator",
+    period: "Sep 2025 - Jan 2026",
     bullets: [
-      "Operated and coordinated robotics systems in live, user-facing settings, helping demonstrations and workflows run smoothly and reliably.",
-      "Supported setup, observation, and on-the-ground troubleshooting so robot interactions stayed presentation-ready and operationally consistent.",
-      "Worked in a fast-moving robotics environment that required communication, coordination, and close attention to system behavior during execution.",
+      "Led and trained a 14-member operator team for robotics data collection, recruiting 6 members and maintaining consistent performance and data quality for VLA model training.",
+      "Coordinated robotics data collection operations, trained operators on egocentric capture and robotic arms, and improved data quality standards for VLA model development by 200%.",
+      "Designed and set up more than 50 new data collection environments, manipulation tasks, and datasets to expand the quantity and diversity of robotics training data.",
     ],
   },
 ];
 
 const projectItems = [
   {
-    title: "SurveSG",
+    title: "Surve",
     description:
-      "Survey platform concept focused on making participation feel more trustworthy, rewarding, and sustainable for both users and businesses.",
-    tools: ["Product strategy", "User experience", "Platform design", "Trust and payout flows"],
+      "Startup survey platform created to help small businesses and early-stage teams collect and distill consumer insight quickly across larger audiences.",
+    tools: ["Startup strategy", "Consumer insight", "Product design", "Go-to-market"],
     impact: [
-      "Framed the product around a clear problem statement and a practical proposed solution.",
-      "Explored fast, trustworthy payouts as a key lever for user motivation and retention.",
-      "Considered target users, engagement, sustainability, risks, and future extensions in the concept documentation.",
+      "Co-founded the venture and shaped the product around rapid, practical market feedback for startups and small businesses.",
+      "Positioned the platform to simplify survey distribution and insight distillation across larger respondent groups.",
+      "Secured S$2,000 in funding from SUTD's Baby Shark Fund to support development.",
     ],
   },
   {
     title: "SwipeRx",
     description:
-      "Business analytics and forecasting project built around pharmacy transaction data to study demand behavior and simulate January 2026 procurement needs.",
-    tools: ["Python", "Demand analysis", "Time-series forecasting", "Data visualization"],
+      "Applied analytics work focused on turning inventory and transaction data into actionable business recommendations.",
+    tools: ["SQL", "Forecasting", "Regression", "Inventory analytics"],
     impact: [
-      "Analyzed historical transaction data from January 2024 to December 2025 to understand pharmacy purchasing behavior.",
-      "Compared SKU growth, revenue growth, discount effects, and pharmacy-level stocking patterns across the distribution channel.",
-      "Applied Holt-Winters forecasting to model product demand and support a forward-looking business simulation for January 2026.",
-    ],
-  },
-  {
-    title: "AION: Debate Chatbot",
-    description:
-      "Persuasive AI chatbot built for debate settings, combining a strong persona, conversational interface, and structured rebuttal flow.",
-    tools: ["React / Next.js", "Prompt design", "Conversation UX", "Voice interaction"],
-    impact: [
-      "Designed an AI experience around a clear argumentative persona rather than a generic assistant workflow.",
-      "Built a user-facing interface for live debate interactions, fast rebuttals, and conversational back-and-forth.",
-      "Focused on rhetoric, interaction flow, and response delivery to create a more engaging and intentional chatbot experience.",
+      "Applied SQL, Holt-Winters forecasting, rolling averages, ABC analysis, backpropagation, and regression models to large datasets.",
+      "Translated raw inventory and transaction patterns into practical recommendations for decision-making and stock planning.",
+      "Used forecasting and analytical modelling to support clearer operational actions from business data.",
     ],
   },
 ];
 
 const skillGroups = [
   {
-    title: "Programming / Data",
-    items: ["Python", "SQL", "JavaScript", "Data analysis", "Time-series data"],
+    title: "Programming Languages",
+    items: ["Python", "SQL", "R", "Julia"],
   },
   {
-    title: "Analytics / Modelling",
-    items: [
-      "Business analytics",
-      "Demand forecasting",
-      "Revenue analysis",
-      "Optimization thinking",
-      "Data visualization",
-    ],
+    title: "Quantitative Analysis",
+    items: ["Pandas", "NumPy", "Matplotlib", "Regression Modelling", "Time-Series Forecasting"],
   },
   {
-    title: "AI / Robotics",
-    items: [
-      "AI application design",
-      "Prompt design",
-      "Robotics operations",
-      "System integration",
-      "Human-robot interaction",
-    ],
+    title: "Developer Tools",
+    items: ["Git", "Visual Studio Code", "Vercel", "Xcode", "Ubuntu"],
   },
   {
-    title: "Tools / Platforms",
-    items: ["React", "Vite", "Git", "Jupyter notebooks", "Node.js"],
+    title: "AI Tools",
+    items: ["Hugging Face", "Lerobot", "TensorFlow", "OpenPI", "Pi0.5", "Weights & Biases"],
   },
 ];
 
@@ -129,21 +108,48 @@ function AboutSection() {
     <section className="section panel" id="about">
       <div className="section-heading">
         <p className="eyebrow">About</p>
-        <h2>Systems-minded, analytical, and business-aware</h2>
+        <h2>Finance, analytics, and emerging technology with a builder mindset</h2>
       </div>
 
       <div className="about-grid">
         <p>
-          I study Engineering Systems and Design at the Singapore University of Technology and
-          Design, where I am drawn to work that blends structured problem solving with real-world
-          decision making.
+          I am currently pursuing a Bachelor of Engineering in Engineering Systems and Design at
+          the Singapore University of Technology and Design, where I am building a foundation in
+          probability, optimization, analytics, and AI.
         </p>
         <p>
-          My interests span finance, analytics, optimization, and AI, especially in settings where
-          technical execution needs to translate into practical value for users, operators, or
-          businesses. I am most energized by problems that require both analytical depth and a clear
-          understanding of how systems perform in practice.
+          I am especially interested in finance, analytics, and emerging technologies, and I try to
+          approach problems with originality and discipline. The way I work is grounded in humility,
+          adaptability, and a genuine eagerness to keep learning.
         </p>
+      </div>
+
+      <div className="about-highlights">
+        <article className="panel about-card">
+          <p className="card-label">Education</p>
+          <h3>Singapore University of Technology and Design</h3>
+          <p className="card-meta">Sep 2024 - Present</p>
+          <p className="project-description">
+            Bachelor of Engineering in Engineering Systems and Design
+          </p>
+          <div className="tag-row">
+            <span className="tag">Probability &amp; Statistics</span>
+            <span className="tag">Optimization</span>
+            <span className="tag">Data &amp; Business Analytics</span>
+            <span className="tag">AI &amp; Digital Humanities</span>
+          </div>
+        </article>
+
+        <article className="panel about-card">
+          <p className="card-label">Additional Information</p>
+          <h3>Availability and background</h3>
+          <div className="tag-row">
+            <span className="tag">Singaporean</span>
+            <span className="tag">English</span>
+            <span className="tag">Mandarin</span>
+            <span className="tag">Immediate availability</span>
+          </div>
+        </article>
       </div>
     </section>
   );
@@ -154,7 +160,7 @@ function ExperienceSection() {
     <section className="section" id="experience">
       <div className="section-heading">
         <p className="eyebrow">Experience</p>
-        <h2>Hands-on exposure across robotics and coordination</h2>
+        <h2>Recent experience in robotics, data collection, and applied AI</h2>
       </div>
 
       <div className="card-grid">
@@ -162,6 +168,7 @@ function ExperienceSection() {
           <article className="panel card" key={item.company}>
             <p className="card-label">{item.company}</p>
             <h3>{item.role}</h3>
+            <p className="card-meta">{item.period}</p>
             <ul className="detail-list">
               {item.bullets.map((bullet) => (
                 <li key={bullet}>{bullet}</li>
@@ -179,7 +186,7 @@ function ProjectsSection() {
     <section className="section" id="projects">
       <div className="section-heading">
         <p className="eyebrow">Projects</p>
-        <h2>Selected work across analytics, product thinking, and AI</h2>
+        <h2>Venture and analytics work outside the classroom</h2>
       </div>
 
       <div className="card-grid projects-grid">
@@ -211,7 +218,7 @@ function SkillsSection() {
     <section className="section" id="skills">
       <div className="section-heading">
         <p className="eyebrow">Skills</p>
-        <h2>Built around analytics, technical execution, and applied AI</h2>
+        <h2>Technical skills across data, forecasting, and AI tooling</h2>
       </div>
 
       <div className="skills-grid">
@@ -237,7 +244,7 @@ function ContactSection() {
     <section className="section panel contact-panel" id="contact">
       <div className="section-heading">
         <p className="eyebrow">Contact</p>
-        <h2>Open to analytical, finance, business analytics, and AI-related opportunities</h2>
+        <h2>Open to finance, analytics, business, and AI-related opportunities</h2>
       </div>
 
       <p className="contact-copy">
@@ -358,13 +365,12 @@ function App() {
               <p className="eyebrow">Personal Portfolio</p>
               <h1>Lee Shaw Kiat</h1>
               <p className="hero-subtitle">
-                Engineering Systems and Design Undergraduate | Finance, Analytics, and AI
+                Engineering Systems and Design Undergraduate | Finance, Analytics, and Emerging Technologies
               </p>
               <p className="hero-intro">
-                I am an Engineering Systems and Design undergraduate at SUTD with interests at the
-                intersection of finance, business analytics, optimization, and AI. I enjoy turning
-                technical work, data, and systems thinking into practical decisions and user-facing
-                solutions with clear business value.
+                I am a SUTD undergraduate with a strong interest in finance, analytics, and
+                emerging technologies. I enjoy combining structured thinking, technical execution,
+                and business awareness to turn data and systems into practical outcomes.
               </p>
 
               <div className="hero-actions">
@@ -391,7 +397,7 @@ function App() {
               <div className="hero-pills" aria-label="Focus areas">
                 <span>Finance and analytics</span>
                 <span>AI and robotics</span>
-                <span>Systems thinking</span>
+                <span>Business problem solving</span>
               </div>
             </div>
 
