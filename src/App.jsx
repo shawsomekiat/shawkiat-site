@@ -26,6 +26,8 @@ const experienceItems = [
     company: "CortexAI",
     role: "Artificial Intelligence Engineering Intern - Lead Robot Operator and Coordinator",
     period: "Sep 2025 - Jan 2026",
+    recommendationLabel: "View Recommendation",
+    recommendationHref: "/CortexAI-Letter-of-Recommendation.pdf",
     bullets: [
       "Led and trained a 14-member operator team for robotics data collection, recruiting 6 members and ensuring consistent performance and data quality for VLA model training.",
       "Coordinated robotics data collection operations by training operators on egocentric capture and robotic arms, while improving data quality standards for VLA model development by 200%.",
@@ -169,6 +171,16 @@ function ExperienceSection() {
                 <li key={bullet}>{bullet}</li>
               ))}
             </ul>
+            {item.recommendationHref ? (
+              <a
+                className="card-cta"
+                href={item.recommendationHref}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {item.recommendationLabel}
+              </a>
+            ) : null}
           </article>
         ))}
       </div>

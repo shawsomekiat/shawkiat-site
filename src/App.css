@@ -429,6 +429,26 @@
   margin-bottom: 0;
 }
 
+.card-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.4rem;
+  padding: 0.8rem 1.15rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.05);
+  color: #f7f2fa;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.card-cta:hover,
+.card-cta:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(255, 144, 145, 0.58);
+}
+
 .skills-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
