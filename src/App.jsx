@@ -155,7 +155,7 @@ function ExperienceSection() {
     <section className="section" id="experience">
       <div className="section-heading">
         <p className="eyebrow">Experience</p>
-        <h2>Professional experience exactly as outlined in the CV</h2>
+        <h2>Professional Experience</h2>
       </div>
 
       <div className="card-grid">
@@ -181,7 +181,7 @@ function ProjectsSection() {
     <section className="section" id="projects">
       <div className="section-heading">
         <p className="eyebrow">Leadership &amp; Activities</p>
-        <h2>Leadership and business activity from the attached CV</h2>
+        <h2>Leadership &amp; Activities</h2>
       </div>
 
       <div className="card-grid projects-grid">
@@ -213,7 +213,7 @@ function SkillsSection() {
     <section className="section" id="skills">
       <div className="section-heading">
         <p className="eyebrow">Skills</p>
-        <h2>Technical skills listed in the CV</h2>
+        <h2>Technical Skills</h2>
       </div>
 
       <div className="skills-grid">
@@ -239,12 +239,11 @@ function ContactSection() {
     <section className="section panel contact-panel" id="contact">
       <div className="section-heading">
         <p className="eyebrow">Contact</p>
-        <h2>Contact details from the updated CV</h2>
+        <h2>Contact</h2>
       </div>
 
       <p className="contact-copy">
-        Phone, email, LinkedIn, and portfolio details are aligned with the attached CV for direct
-        contact and resume sharing.
+        Reach out through any of the channels below.
       </p>
 
       <div className="contact-grid">
