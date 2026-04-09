@@ -8,6 +8,7 @@ const navigation = [
   { label: "Experience", page: "experience" },
   { label: "Leadership", page: "projects" },
   { label: "Skills", page: "skills" },
+  { label: "Resume", page: "resume" },
   { label: "Contact", page: "contact" },
 ];
 
@@ -267,6 +268,51 @@ function ContactSection() {
   );
 }
 
+function ResumeSection() {
+  return (
+    <section className="section panel" id="resume">
+      <div className="section-heading">
+        <p className="eyebrow">Resume</p>
+        <h2>Lee Shaw Kiat Kevin CV</h2>
+      </div>
+
+      <div className="card-grid">
+        <article className="panel card">
+          <p className="card-label">Professional Summary</p>
+          <ul className="detail-list">
+            <li>
+              I have a strong interest in finance, analytics, and emerging technologies, and take
+              pride in approaching problems with originality and discipline.
+            </li>
+            <li>
+              In every role I take on, I remain guided by my three core values, humility,
+              adaptability and a genuine eagerness to learn.
+            </li>
+          </ul>
+        </article>
+
+        <article className="panel card">
+          <p className="card-label">Education</p>
+          <h3>Singapore University of Technology and Design (SUTD)</h3>
+          <p className="card-meta">Sep 2024 - Present</p>
+          <p className="project-description">Bachelor of Engineering in Engineering Systems and Design</p>
+          <div className="tag-row">
+            <span className="tag">Probability &amp; Statistics</span>
+            <span className="tag">Optimization</span>
+            <span className="tag">Data &amp; Business Analytics</span>
+            <span className="tag">AI &amp; Digital Humanities</span>
+          </div>
+        </article>
+      </div>
+
+      <ExperienceSection />
+      <ProjectsSection />
+      <SkillsSection />
+      <ContactSection />
+    </section>
+  );
+}
+
 function App() {
   const [activePage, setActivePage] = useState(getActivePageFromHash);
 
@@ -309,6 +355,8 @@ function App() {
             <SkillsSection />
           </section>
         );
+      case "resume":
+        return <ResumeSection />;
       case "contact":
         return <ContactSection />;
       default:
@@ -350,8 +398,8 @@ function App() {
           ))}
         </nav>
 
-        <a className="nav-cta" href="/Lee-Shaw-Kiat-Kevin-CV.doc" target="_blank" rel="noreferrer">
-          Download CV
+        <a className="nav-cta" href="/#resume" target="_blank" rel="noreferrer">
+          View Resume
         </a>
       </header>
 
@@ -373,11 +421,11 @@ function App() {
               <div className="hero-actions">
                 <a
                   className="button button-primary"
-                  href="/Lee-Shaw-Kiat-Kevin-CV.doc"
+                  href="/#resume"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Download CV
+                  View Resume
                 </a>
                 <a
                   className="button button-secondary"
