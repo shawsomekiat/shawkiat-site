@@ -8,6 +8,12 @@ const navigation = [
   { label: "Experience", page: "experience" },
   { label: "Projects", page: "projects" },
   { label: "Skills", page: "skills" },
+  {
+    label: "Resume",
+    href: "/Lee-Shaw-Kiat-Resume.pdf",
+    target: "_blank",
+    rel: "noreferrer",
+  },
   { label: "Contact", page: "contact" },
 ];
 
@@ -96,7 +102,7 @@ const contactLinks = [
   },
 ];
 
-const validPages = new Set(navigation.map((item) => item.page));
+const validPages = new Set(navigation.filter((item) => item.page).map((item) => item.page));
 
 function getActivePageFromHash() {
   const page = window.location.hash.replace("#", "") || "home";
@@ -340,13 +346,19 @@ function App() {
         <nav className="topnav" aria-label="Primary navigation">
           {navigation.map((item) => (
             <a
-              key={item.page}
-              href={`#${item.page}`}
+              key={item.page ?? item.label}
+              href={item.href ?? `#${item.page}`}
               className={activePage === item.page ? "is-active" : undefined}
-              onClick={(event) => {
-                event.preventDefault();
-                navigateToPage(item.page);
-              }}
+              target={item.target}
+              rel={item.rel}
+              onClick={
+                item.page
+                  ? (event) => {
+                      event.preventDefault();
+                      navigateToPage(item.page);
+                    }
+                  : undefined
+              }
             >
               {item.label}
             </a>
