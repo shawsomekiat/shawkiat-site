@@ -4,9 +4,9 @@ import portrait from "./assets/lee-shaw-kiat-portrait.jpg";
 
 const navigation = [
   { label: "Home", page: "home" },
-  { label: "About", page: "about" },
+  { label: "Summary", page: "about" },
   { label: "Experience", page: "experience" },
-  { label: "Projects", page: "projects" },
+  { label: "Leadership", page: "projects" },
   { label: "Skills", page: "skills" },
   { label: "Contact", page: "contact" },
 ];
@@ -17,9 +17,9 @@ const experienceItems = [
     role: "Artificial Intelligence Engineering Intern - Head of Data Collection and Teleoperation",
     period: "Jan 2026 - Present",
     bullets: [
-      "Built and deployed an end-to-end robotics inference pipeline, integrating dual-arm robotic systems with cloud-based Vision-Language-Action models for real-time decision-making.",
-      "Evaluated model performance across multiple training checkpoints, identifying grasp instability, over-commitment, and policy collapse, and improved model performance by 50% within the first week.",
-      "Developed a Python-based diagnostic tool to identify dataset episodes responsible for training loss and support faster model iteration.",
+      "Built and deployed an end-to-end robotics inference pipeline, integrating dual-arm robotic systems with cloud-based Vision-Language-Action (VLA) models for real-time decision-making.",
+      "Evaluated model performance across multiple training checkpoints, identifying key failure modes including grasp instability, over-commitment, and policy collapse. Enhanced model performance by 50% within the first week.",
+      "Developed a Python-based diagnostic tool that identifies dataset episodes responsible for training loss.",
     ],
   },
   {
@@ -27,35 +27,29 @@ const experienceItems = [
     role: "Artificial Intelligence Engineering Intern - Lead Robot Operator and Coordinator",
     period: "Sep 2025 - Jan 2026",
     bullets: [
-      "Led and trained a 14-member operator team for robotics data collection, recruiting 6 members and maintaining consistent performance and data quality for VLA model training.",
-      "Coordinated robotics data collection operations, trained operators on egocentric capture and robotic arms, and improved data quality standards for VLA model development by 200%.",
-      "Designed and set up more than 50 new data collection environments, manipulation tasks, and datasets to expand the quantity and diversity of robotics training data.",
+      "Led and trained a 14-member operator team for robotics data collection, recruiting 6 members and ensuring consistent performance and data quality for VLA model training.",
+      "Coordinated robotics data collection operations by training operators on egocentric capture and robotic arms, while improving data quality standards for VLA model development by 200%.",
+      "Designed and set up 50+ new data collection environments, manipulation tasks, and datasets to expand the quantity and diversity of training data for robotics systems.",
     ],
   },
 ];
 
 const projectItems = [
   {
-    title: "Surve",
+    title: "SwipeRx",
     description:
-      "Startup survey platform created to help small businesses and early-stage teams collect and distill consumer insight quickly across larger audiences.",
-    tools: ["Startup strategy", "Consumer insight", "Product design", "Go-to-market"],
+      "Applied SQL, Holt-Winters Forecasting, Rolling Averages, ABC analysis, Backpropagation and Regression models to analyse and transform large amounts of data into actionable inventory recommendations.",
+    tools: ["Data & Business Analyst", "SQL", "Forecasting", "Regression"],
     impact: [
-      "Co-founded the venture and shaped the product around rapid, practical market feedback for startups and small businesses.",
-      "Positioned the platform to simplify survey distribution and insight distillation across larger respondent groups.",
-      "Secured S$2,000 in funding from SUTD's Baby Shark Fund to support development.",
+      "Analysed large datasets and translated them into practical inventory recommendations.",
     ],
   },
   {
-    title: "SwipeRx",
+    title: "Surve",
     description:
-      "Applied analytics work focused on turning inventory and transaction data into actionable business recommendations.",
-    tools: ["SQL", "Forecasting", "Regression", "Inventory analytics"],
-    impact: [
-      "Applied SQL, Holt-Winters forecasting, rolling averages, ABC analysis, backpropagation, and regression models to large datasets.",
-      "Translated raw inventory and transaction patterns into practical recommendations for decision-making and stock planning.",
-      "Used forecasting and analytical modelling to support clearer operational actions from business data.",
-    ],
+      "Created a survey app enabling start-ups and small businesses to rapidly collect and distil consumer insights across large audiences.",
+    tools: ["Co-Founder", "CEO", "Startup", "Consumer insights"],
+    impact: ["Received $2000 in funding from SUTD's Baby Shark Fund."],
   },
 ];
 
@@ -74,11 +68,16 @@ const skillGroups = [
   },
   {
     title: "AI Tools",
-    items: ["Hugging Face", "Lerobot", "TensorFlow", "OpenPI", "Pi0.5", "Weights & Biases"],
+    items: ["Hugging Face", "Lerobot", "TensorFlow", "OpenPI", "Pi0.5", "W&B"],
   },
 ];
 
 const contactLinks = [
+  {
+    label: "Phone",
+    value: "+65 9221 9665",
+    href: "tel:+6592219665",
+  },
   {
     label: "Email",
     value: "kevinleeshawkiat@gmail.com",
@@ -91,8 +90,8 @@ const contactLinks = [
   },
   {
     label: "Portfolio",
-    value: "This portfolio home",
-    href: "#home",
+    value: "shawkiat-site.vercel.app",
+    href: "https://shawkiat-site.vercel.app/",
   },
 ];
 
@@ -107,20 +106,18 @@ function AboutSection() {
   return (
     <section className="section panel" id="about">
       <div className="section-heading">
-        <p className="eyebrow">About</p>
-        <h2>Finance, analytics, and emerging technology with a builder mindset</h2>
+        <p className="eyebrow">Professional Summary</p>
+        <h2>Finance, analytics, and emerging technologies with originality and discipline</h2>
       </div>
 
       <div className="about-grid">
         <p>
-          I am currently pursuing a Bachelor of Engineering in Engineering Systems and Design at
-          the Singapore University of Technology and Design, where I am building a foundation in
-          probability, optimization, analytics, and AI.
+          I have a strong interest in finance, analytics, and emerging technologies, and take
+          pride in approaching problems with originality and discipline.
         </p>
         <p>
-          I am especially interested in finance, analytics, and emerging technologies, and I try to
-          approach problems with originality and discipline. The way I work is grounded in humility,
-          adaptability, and a genuine eagerness to keep learning.
+          In every role I take on, I remain guided by my three core values, humility,
+          adaptability and a genuine eagerness to learn.
         </p>
       </div>
 
@@ -141,12 +138,12 @@ function AboutSection() {
         </article>
 
         <article className="panel about-card">
-          <p className="card-label">Additional Information</p>
-          <h3>Availability and background</h3>
+          <p className="card-label">Miscellaneous Information</p>
+          <h3>Background and availability</h3>
           <div className="tag-row">
             <span className="tag">Singaporean</span>
-            <span className="tag">English</span>
-            <span className="tag">Mandarin</span>
+            <span className="tag">Fluent in English</span>
+            <span className="tag">Fluent in Mandarin</span>
             <span className="tag">Immediate availability</span>
           </div>
         </article>
@@ -160,7 +157,7 @@ function ExperienceSection() {
     <section className="section" id="experience">
       <div className="section-heading">
         <p className="eyebrow">Experience</p>
-        <h2>Recent experience in robotics, data collection, and applied AI</h2>
+        <h2>Professional experience exactly as outlined in the CV</h2>
       </div>
 
       <div className="card-grid">
@@ -185,8 +182,8 @@ function ProjectsSection() {
   return (
     <section className="section" id="projects">
       <div className="section-heading">
-        <p className="eyebrow">Projects</p>
-        <h2>Venture and analytics work outside the classroom</h2>
+        <p className="eyebrow">Leadership &amp; Activities</p>
+        <h2>Leadership and business activity from the attached CV</h2>
       </div>
 
       <div className="card-grid projects-grid">
@@ -218,7 +215,7 @@ function SkillsSection() {
     <section className="section" id="skills">
       <div className="section-heading">
         <p className="eyebrow">Skills</p>
-        <h2>Technical skills across data, forecasting, and AI tooling</h2>
+        <h2>Technical skills listed in the CV</h2>
       </div>
 
       <div className="skills-grid">
@@ -244,12 +241,12 @@ function ContactSection() {
     <section className="section panel contact-panel" id="contact">
       <div className="section-heading">
         <p className="eyebrow">Contact</p>
-        <h2>Open to finance, analytics, business, and AI-related opportunities</h2>
+        <h2>Contact details from the updated CV</h2>
       </div>
 
       <p className="contact-copy">
-        If you would like to connect about internships, projects, or future opportunities, feel
-        free to reach out through the channels below.
+        Email, LinkedIn, portfolio, and phone details are aligned with the attached CV for direct
+        contact and resume sharing.
       </p>
 
       <div className="contact-grid">
@@ -353,8 +350,8 @@ function App() {
           ))}
         </nav>
 
-        <a className="nav-cta" href="/Lee-Shaw-Kiat-Resume.pdf" target="_blank" rel="noreferrer">
-          View Resume
+        <a className="nav-cta" href="/Lee-Shaw-Kiat-Kevin-CV.doc" target="_blank" rel="noreferrer">
+          Download CV
         </a>
       </header>
 
@@ -365,22 +362,22 @@ function App() {
               <p className="eyebrow">Personal Portfolio</p>
               <h1>Lee Shaw Kiat</h1>
               <p className="hero-subtitle">
-                Engineering Systems and Design Undergraduate | Finance, Analytics, and Emerging Technologies
+                Engineering Systems and Design Undergraduate | Finance, Analytics, and Emerging
+                Technologies
               </p>
               <p className="hero-intro">
-                I am a SUTD undergraduate with a strong interest in finance, analytics, and
-                emerging technologies. I enjoy combining structured thinking, technical execution,
-                and business awareness to turn data and systems into practical outcomes.
+                I have a strong interest in finance, analytics, and emerging technologies, and
+                take pride in approaching problems with originality and discipline.
               </p>
 
               <div className="hero-actions">
                 <a
                   className="button button-primary"
-                  href="/Lee-Shaw-Kiat-Resume.pdf"
+                  href="/Lee-Shaw-Kiat-Kevin-CV.doc"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  View Resume
+                  Download CV
                 </a>
                 <a
                   className="button button-secondary"
@@ -396,8 +393,8 @@ function App() {
 
               <div className="hero-pills" aria-label="Focus areas">
                 <span>Finance and analytics</span>
-                <span>AI and robotics</span>
-                <span>Business problem solving</span>
+                <span>Emerging technologies</span>
+                <span>Humility and adaptability</span>
               </div>
             </div>
 
