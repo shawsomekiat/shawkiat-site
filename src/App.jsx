@@ -8,12 +8,6 @@ const navigation = [
   { label: "Experience", page: "experience" },
   { label: "Leadership", page: "projects" },
   { label: "Skills", page: "skills" },
-  {
-    label: "Resume",
-    href: "/Lee-Shaw-Kiat-Kevin-CV.pdf",
-    target: "_blank",
-    rel: "noreferrer",
-  },
   { label: "Contact", page: "contact" },
 ];
 
