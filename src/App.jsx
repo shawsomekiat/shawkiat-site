@@ -10,7 +10,7 @@ const navigation = [
   { label: "Skills", page: "skills" },
   {
     label: "Resume",
-    href: "/Lee-Shaw-Kiat-Kevin-CV.doc",
+    href: "/Lee-Shaw-Kiat-Kevin-CV.pdf",
     target: "_blank",
     rel: "noreferrer",
   },
@@ -360,7 +360,7 @@ function App() {
           ))}
         </nav>
 
-        <a className="nav-cta" href="/Lee-Shaw-Kiat-Kevin-CV.doc" target="_blank" rel="noreferrer">
+        <a className="nav-cta" href="/Lee-Shaw-Kiat-Kevin-CV.pdf" target="_blank" rel="noreferrer">
           View Resume
         </a>
       </header>
@@ -382,7 +382,7 @@ function App() {
               <div className="hero-actions">
                 <a
                   className="button button-primary"
-                  href="/Lee-Shaw-Kiat-Kevin-CV.doc"
+                  href="/Lee-Shaw-Kiat-Kevin-CV.pdf"
                   target="_blank"
                   rel="noreferrer"
                 >
